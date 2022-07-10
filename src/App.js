@@ -5,12 +5,13 @@ import Aboutme from "./routes/Aboutme";
 import Asyncstoragewarning from "./routes/Asyncstoragewarning";
 import Drawertoapp from "./routes/Drawertoapp";
 import Firebaseinstall from "./routes/Firebaseinstall";
-import Search from "./routes/Search" 
-
+import Search from "./routes/Search";
+import Carousel from "./Carousel";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import TopBar from "./TopBar";
 import { getAnalytics } from "firebase/analytics";
+import Scrollbar from "./Scrollbar";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -37,17 +38,18 @@ function App() {
       <TopBar />
 
       <h1>Welcome to React Router!</h1>
-      <Routes>
-
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<Aboutme />} />
-        <Route path="Search" element={<Search />} />
-        <Route path="Asyncstoragewarning" element={<Asyncstoragewarning />} />
-        <Route path="Drawertoapp" element={<Drawertoapp />} />
-        <Route path="Firebaseinstall" element={<Firebaseinstall />} />
-
-      </Routes>
-
+      <div className="separator">
+        <Routes>
+          <Route path="/" element={<Scrollbar />} />
+          <Route path="about" element={<Aboutme />} />
+          <Route path="Search" element={<Search />} />
+          <Route path="Asyncstoragewarning" element={<Asyncstoragewarning />} />
+          <Route path="Drawertoapp" element={<Drawertoapp />} />
+          <Route path="Firebaseinstall" element={<Firebaseinstall />} />
+        </Routes>
+        <h4 className="rightside">hello there!</h4>
+      </div>
+      <Carousel />
     </div>
   );
 }
