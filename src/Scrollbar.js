@@ -1,32 +1,80 @@
-import React from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/scrollbar";
-
+import React, { useLayoutEffect } from "react";
 import "./scrollstyles.css";
+import { Link } from "react-router-dom";
 
-// import required modules
-import { FreeMode, Scrollbar, Mousewheel } from "swiper";
 
 export default function App() {
+  useLayoutEffect(() => {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+
+
+  }, [])
+
+
   return (
-    <>
-      <Swiper
-        direction={"vertical"}
-        slidesPerView={"auto"}
-        freeMode={true}
-        scrollbar={true}
-        mousewheel={true}
-        modules={[FreeMode, Scrollbar, Mousewheel]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-           <h4>Scroll Container</h4>
-         <p>
+    <div className="scrollbar" >
+
+      <nav>
+        <Link to="/Asyncstoragewarning" className="cards">
+          <p className="innercard">
+            <h1>How to remove Asyncstorage warning in expo</h1>
+            Scroll Container is a container that can be scrolled.<br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.
+
+          </p>
+        </Link>
+      </nav>
+      <div>
+        <ins className="adsbygoogle"
+          style={{ display: "block", textAlign: "center" }}
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-3293100023285402"
+          data-ad-slot="4745637940"></ins></div>
+
+      <nav>
+        <Link to="/Drawertoapp" className="cards">
+          <p className="innercard">
+            <h1>How to add adsense to a react website</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
+            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
+            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
+            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
+            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
+            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
+            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
+            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
+            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
+            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
+            sodales posuere eget non est. Fusce convallis vestibulum dolor non
+            volutpat. Vivamus vestibulum quam ut ultricies pretium.
+
+          </p>
+        </Link>
+      </nav>
+      <div>
+        <ins className="adsbygoogle"
+          style={{ display: "block", textAlign: "center" }}
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-3293100023285402"
+          data-ad-slot="4745637940"></ins></div>
+
+      <nav>
+        <Link to="/Firebaseinstall" className="cards">
+          <p className="innercard">
+            <h1>How to install firebase in expo</h1>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
             ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
             dolor lectus eu libero. Vestibulum venenatis eget turpis sed
@@ -40,42 +88,20 @@ export default function App() {
             sodales posuere eget non est. Fusce convallis vestibulum dolor non
             volutpat. Vivamus vestibulum quam ut ultricies pretium.
           </p>
-        </SwiperSlide>
-        <SwiperSlide>
-           <h4>Scroll Container</h4>
-         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
-            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
-            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
-            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
-            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
-            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
-            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
-            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
-            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
-            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
-            sodales posuere eget non est. Fusce convallis vestibulum dolor non
-            volutpat. Vivamus vestibulum quam ut ultricies pretium.
-          </p>
-        </SwiperSlide>
-        <SwiperSlide>
-           <h4>Scroll Container</h4>
-         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus,
-            ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet
-            dolor lectus eu libero. Vestibulum venenatis eget turpis sed
-            faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem. Etiam
-            elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean
-            tristique nisl tellus, sit amet fringilla nisl volutpat cursus.
-            Quisque dignissim lectus ac nunc consectetur mattis. Proin vel
-            hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et
-            tincidunt tristique, nisl risus facilisis lectus, ut interdum orci
-            nisl ac nunc. Cras et aliquam felis. Quisque vel ipsum at elit
-            sodales posuere eget non est. Fusce convallis vestibulum dolor non
-            volutpat. Vivamus vestibulum quam ut ultricies pretium.
-          </p>
-        </SwiperSlide>
-      </Swiper>
-    </>
+        </Link>
+      </nav>
+      <div>
+        <ins className="adsbygoogle"
+          style={{ display: "block", textAlign: "center" }}
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-3293100023285402"
+          data-ad-slot="4745637940">
+        </ins>
+      </div>
+
+    </div>
   );
 }
+
+

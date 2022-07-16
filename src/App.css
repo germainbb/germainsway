@@ -1,20 +1,29 @@
 .App {
   text-align: center;
   font-family: 'Lora', serif;
+  text-decoration: none;
+
+}
+.rightside{
+  display: flex;
+  flex: 1;
+  justify-self: flex-end;
+}
+.separator{
+  display: flex;
+  flex: 2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 600px) {
+  .App {
+    font-size: 16px;
   }
 }
+  
 
-.App-header {
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -36,4 +45,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

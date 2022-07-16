@@ -18,7 +18,7 @@ export default function Carousel() {
     <>
       <Swiper
         navigation={true}
-        slidesPerView={3}
+        slidesPerView={"auto"}
         spaceBetween={60}
         freeMode={true}
         pagination={{

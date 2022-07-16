@@ -1,6 +1,7 @@
+import React, { useLayoutEffect } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./routes/Home";
+//import Home from "./routes/Home";
 import Aboutme from "./routes/Aboutme";
 import Asyncstoragewarning from "./routes/Asyncstoragewarning";
 import Drawertoapp from "./routes/Drawertoapp";
@@ -12,6 +13,7 @@ import { initializeApp } from "firebase/app";
 import TopBar from "./TopBar";
 import { getAnalytics } from "firebase/analytics";
 import Scrollbar from "./Scrollbar";
+
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -33,11 +35,24 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 function App() {
+
+  useLayoutEffect(() => {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+    
+  }, [])
+
   return (
     <div className="App">
       <TopBar />
 
-      <h1>Welcome to React Router!</h1>
+      <h1 >Welcome to React Router!</h1>
+      <div>
+        <ins className="adsbygoogle"
+          style={{ display: "block", textAlign: "center" }}
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-3293100023285402"
+          data-ad-slot="4745637940"></ins></div>
       <div className="separator">
         <Routes>
           <Route path="/" element={<Scrollbar />} />
@@ -47,7 +62,19 @@ function App() {
           <Route path="Drawertoapp" element={<Drawertoapp />} />
           <Route path="Firebaseinstall" element={<Firebaseinstall />} />
         </Routes>
-        <h4 className="rightside">hello there!</h4>
+        <div className="rightside">
+          <h4>hello there!</h4>
+          {/*  responsive and native ads */}
+          <div>
+            <ins className="adsbygoogle"
+              style={{ display: "block" }}
+              data-ad-client="ca-pub-3293100023285402"
+              data-ad-slot="9688092992"
+              data-ad-format="auto"
+              data-full-width-responsive="true">
+            </ins>
+          </div>
+        </div>
       </div>
       <Carousel />
     </div>
@@ -55,3 +82,4 @@ function App() {
 }
 
 export default App;
+

@@ -1,38 +1,18 @@
-#app { height: 100% }
-html,
-body {
-  position: relative;
-  height: 100%;
+.scrollbar{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
 }
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+.cards{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
 }
-
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #fff;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  font-size: 18px;
-  height: auto;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 30px;
+.innercard{
+    display: flex;
+    padding: 1%;
+    border-radius: 5px;
+    border-width: 6px;
+    flex-direction: column;
 }

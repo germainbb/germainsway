@@ -1,5 +1,5 @@
 .top {
-    /* width: 100%; */
+    width: auto;
     height: 50px;
     background-color: yellow;
     position: sticky;

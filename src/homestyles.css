@@ -16,11 +16,12 @@ body {
 }
 .separator{
     display: flex;
+    flex: 1;
 }
 .rightside{
-   
-    width: 30%;
-    justify-self: flex-end;
+    display: flex;
+    flex: 1;
+    /* justify-self: flex-end; */
 }
 
 .swiper {
@@ -30,7 +31,7 @@ body {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   background: #fff;
 
   /* Center slide text vertically */
