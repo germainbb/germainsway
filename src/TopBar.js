@@ -7,11 +7,9 @@ export default function TopBar() {
   return (
     <div className="top">
       <SimpleDrawer />
-      <h2 className="name">Germain's ways</h2>
+      <h2 className="name">Find My Business</h2>
       
-      <nav>
-        <Link to="/Search"><SearchOutlinedIcon/></Link>
-      </nav>
+      <SearchOutlinedIcon/>
     </div>
   );
 }

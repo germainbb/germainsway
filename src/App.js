@@ -13,6 +13,10 @@ import { initializeApp } from "firebase/app";
 import TopBar from "./TopBar";
 import { getAnalytics } from "firebase/analytics";
 import Scrollbar from "./Scrollbar";
+import { Link } from "react-router-dom";
+import logo from "../src/logo.png";
+import screenshot from "../src/Screenshot.jpg";
+import screenshot3 from "../src/screenshot3.png";
 
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -44,16 +48,19 @@ function App() {
   return (
     <div className="App">
       <TopBar />
-
-      <h1 >Welcome to React Router!</h1>
       <div>
-        <ins className="adsbygoogle"
-          style={{ display: "block", textAlign: "center" }}
-          data-ad-layout="in-article"
-          data-ad-format="fluid"
-          data-ad-client="ca-pub-3293100023285402"
-          data-ad-slot="4745637940"></ins></div>
-      <div className="separator">
+      <h1 >Welcome</h1>
+      <h2>Find all businesses in Zambia in one place, no more asking around.</h2>
+      <h2>It's time for next level</h2>
+      <h2>Buy and sell products/services</h2>
+      <h2>Promote your business</h2>
+      <h2>Tell your customers about it.</h2>
+      <h2>If you have a skill, don't feel shy to post and let employers find you easily.</h2>
+      <a target="blank" href="https://play.google.com/store/apps/details?id=com.findmybusiness.app">Download the app</a>
+      <h2>Go get that money! Just do it!</h2>
+      <img width="100" height="100" src={logo} alt="" />
+      <img width="300" height="600" src={screenshot} alt="" />
+      <img width="800" height="400" src={screenshot3} alt="" />
         <Routes>
           <Route path="/" element={<Scrollbar />} />
           <Route path="about" element={<Aboutme />} />
@@ -62,21 +69,8 @@ function App() {
           <Route path="Drawertoapp" element={<Drawertoapp />} />
           <Route path="Firebaseinstall" element={<Firebaseinstall />} />
         </Routes>
-        <div className="rightside">
-          <h4>hello there!</h4>
-          {/*  responsive and native ads */}
-          <div>
-            <ins className="adsbygoogle"
-              style={{ display: "block" }}
-              data-ad-client="ca-pub-3293100023285402"
-              data-ad-slot="9688092992"
-              data-ad-format="auto"
-              data-full-width-responsive="true">
-            </ins>
-          </div>
-        </div>
       </div>
-      <Carousel />
+      {/* <Carousel /> */}
     </div>
   );
 }
