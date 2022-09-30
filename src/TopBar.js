@@ -7,7 +7,7 @@ export default function TopBar() {
   return (
     <div className="top">
       <SimpleDrawer />
-      <h2 className="name">Find My Business</h2>
+      <h2 className="name">MyBine Marketplace</h2>
       
       <SearchOutlinedIcon/>
     </div>

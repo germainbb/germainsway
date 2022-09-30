@@ -3,7 +3,7 @@ import "./scrollstyles.css";
 import { Link } from "react-router-dom";
 import logo from "../src/logo.png";
 import screenshot from "../src/Screenshot.jpg";
-import screenshot3 from "../src/screenshot3.png";
+import screenshot3 from "../src/screenshot3.jpg";
 
 export default function App() {
   useLayoutEffect(() => {
@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <div className="scrollbar">
-    <h2>find my business</h2>
+    <h2>MyBine</h2>
       
     </div>
   );
