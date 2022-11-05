@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <div className="scrollbar">
-    <h2>MyBine</h2>
+    <h2>ThinkChat</h2>
       
     </div>
   );

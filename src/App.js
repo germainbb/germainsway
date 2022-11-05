@@ -14,9 +14,10 @@ import TopBar from "./TopBar";
 import { getAnalytics } from "firebase/analytics";
 import Scrollbar from "./Scrollbar";
 import { Link } from "react-router-dom";
-import logo from "../src/logo.png";
-import screenshot from "../src/Screenshot.jpg";
-import screenshot3 from "../src/screenshot3.jpg";
+import logo from "../src/logo2.png";
+import screenshot from "../src/Banner4.png";
+import screenshot3 from "../src/prof.jpg";
+import screenshot4 from "../src/dress.jpg";
 
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -50,19 +51,20 @@ function App() {
       <TopBar />
       <div>
       <h1 >Welcome</h1>
-      <h2>Find all businesses in one place, no more asking around.</h2>
-      <h2>It's time for next level</h2>
-      <h2>Buy and sell products/services</h2>
-      <h2>Promote your business</h2>
+      <h2 className="h2">Find friends, share images, memes, business posts, gain followers, join WhatsApp groups of your interest, chat via whatsapp and create yourself a large network.</h2>
+      
+      <h2 className="h2">Your WhatsApp companion!</h2>
+      
       <img width="100" height="100" src={logo} alt="" />
-      <h2>Connect your whatsapp business account {"\n"}or your normal whatsapp account for easy and convenient communication!</h2>
+      {/* <h2>Connect your whatsapp business account {"\n"}or your normal whatsapp account for easy and convenient communication!</h2>
       <h2>Tell your customers about it.</h2>
       <h2>If you have a skill, don't feel shy to post and let employers find you easily.</h2>
-      <h2>Download MyBine now! Android only</h2>
-      <a target="blank" href="https://play.google.com/store/apps/details?id=com.gthink.MyBine">Download the app</a>
-      <h2>Go get that money! Just do it!</h2>
-      <img width="300" height="600" src={screenshot} alt="" />
-      <img width="300" height="600" src={screenshot3} alt="" />
+      <h2>Download MyBine now! Android only</h2> */}
+      <a className="link" target="blank" href="https://play.google.com/store/apps/details?id=com.gthink.think_chat">Click here to Download the app</a>
+      <h2>😄 Think it, Chat it!😀</h2>
+      <img width="300" height="450" src={screenshot} alt="" />
+      <img width="300" height="650" src={screenshot3} alt="" />
+      <img width="300" height="650" src={screenshot4} alt="" />
         <Routes>
           <Route path="/" element={<Scrollbar />} />
           <Route path="about" element={<Aboutme />} />
