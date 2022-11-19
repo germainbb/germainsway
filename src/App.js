@@ -50,21 +50,25 @@ function App() {
     <div className="App">
       <TopBar />
       <div>
+      {/* 
       <h1 >Welcome</h1>
       <h2 className="h2">Find friends, share images, memes, business posts, gain followers, join WhatsApp groups of your interest, chat via whatsapp and create yourself a large network.</h2>
       
-      <h2 className="h2">Your WhatsApp companion!</h2>
+      <h2 className="h2">Your WhatsApp companion!</h2> */}
       
-      <img width="100" height="100" src={logo} alt="" />
+      <img width="200" height="200" src={logo} alt="" />
       {/* <h2>Connect your whatsapp business account {"\n"}or your normal whatsapp account for easy and convenient communication!</h2>
       <h2>Tell your customers about it.</h2>
       <h2>If you have a skill, don't feel shy to post and let employers find you easily.</h2>
       <h2>Download MyBine now! Android only</h2> */}
-      <a className="link" target="blank" href="https://play.google.com/store/apps/details?id=com.gthink.think_chat">Click here to Download the app</a>
-      <h2>😄 Think it, Chat it!😀</h2>
-      <img width="300" height="450" src={screenshot} alt="" />
+      <h2></h2>
+      <div className="linkDiv">
+      <a className="link" target="blank" href="https://play.google.com/store/apps/details?id=com.gthink.think_chat">Click here to go to Google Play Store and Download the app</a>
+      </div>
+      {/* <h2>😄 Think it, Chat it!😀</h2> */}
+      {/* <img width="300" height="450" src={screenshot} alt="" />
       <img width="300" height="650" src={screenshot3} alt="" />
-      <img width="300" height="650" src={screenshot4} alt="" />
+      <img width="300" height="650" src={screenshot4} alt="" /> */}
         <Routes>
           <Route path="/" element={<Scrollbar />} />
           <Route path="about" element={<Aboutme />} />

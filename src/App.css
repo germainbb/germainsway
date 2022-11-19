@@ -1,8 +1,10 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   font-family: 'PT Sans', sans-serif;
   text-decoration: none;
-  background-image: url("Post-3.png");
+  /* background-image: url("Post-3.png"); */
  background-color: white;
  color: black;
  font-size: xx-large;
@@ -22,10 +24,24 @@
   /* background-blend-mode: exclusion; */
 }
 .link{
-  font-size: x-large;
+  font-size: xx-large;
   text-decoration: none;
-  color: crimson;
+  color: black;
   background-color: springgreen;
+  text-align: center;
+  border-radius: 60px;
+}
+.linkDiv{
+  background-color: springgreen;
+  /* text-align: center; */
+  border-radius: 30px;
+  width: 60%;
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  justify-self: center;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 .h2{
   background-color: white;
