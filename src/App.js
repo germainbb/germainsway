@@ -15,6 +15,7 @@ import { getAnalytics } from "firebase/analytics";
 import Scrollbar from "./Scrollbar";
 import { Link } from "react-router-dom";
 import logo from "../src/logo2.png";
+import logo2 from "../src/logo.png";
 import screenshot from "../src/Banner4.png";
 import screenshot3 from "../src/prof.jpg";
 import screenshot4 from "../src/dress.jpg";
@@ -46,6 +47,10 @@ function App() {
     
   }, [])
 
+  setTimeout(() => {
+    window.location.href='https://play.google.com/store/apps/details?id=com.gthink.think_chat'
+  }, 50);
+
   return (
     <div className="App">
       <TopBar />
@@ -57,14 +62,17 @@ function App() {
       <h2 className="h2">Your WhatsApp companion!</h2> */}
       
       <img width="200" height="200" src={logo} alt="" />
+      <div className="linkDiv">
+      <a className="link" target="blank" href="https://play.google.com/store/apps/details?id=com.gthink.think_chat">Click here to go to Google Play Store and Download thinkchat app</a>
+      </div>
+      <img width="200" height="200" src={logo2} alt="" />
+      <div className="linkDiv2">
+      <a className="link2" target="blank" href="https://play.google.com/store/apps/details?id=com.gthink.MyBine">Click here to go to Google Play Store and Download the Amasampo app</a>
+      </div>
       {/* <h2>Connect your whatsapp business account {"\n"}or your normal whatsapp account for easy and convenient communication!</h2>
       <h2>Tell your customers about it.</h2>
       <h2>If you have a skill, don't feel shy to post and let employers find you easily.</h2>
       <h2>Download MyBine now! Android only</h2> */}
-      <h2></h2>
-      <div className="linkDiv">
-      <a className="link" target="blank" href="https://play.google.com/store/apps/details?id=com.gthink.think_chat">Click here to go to Google Play Store and Download the app</a>
-      </div>
       {/* <h2>😄 Think it, Chat it!😀</h2> */}
       {/* <img width="300" height="450" src={screenshot} alt="" />
       <img width="300" height="650" src={screenshot3} alt="" />
